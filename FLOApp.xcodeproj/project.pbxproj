@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BE899ED279FC841005A3F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE899EC279FC841005A3F27 /* AppDelegate.swift */; };
+		6BE899EF279FC841005A3F27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE899EE279FC841005A3F27 /* SceneDelegate.swift */; };
+		6BE899F1279FC841005A3F27 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE899F0279FC841005A3F27 /* PlayerViewController.swift */; };
+		6BE899F6279FC842005A3F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE899F5279FC842005A3F27 /* Assets.xcassets */; };
+		6BE899F9279FC843005A3F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE899F7279FC843005A3F27 /* LaunchScreen.storyboard */; };
+		6BE89A01279FCB08005A3F27 /* FetchMusicDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE89A00279FCB08005A3F27 /* FetchMusicDataManager.swift */; };
+		6BE89A03279FCB3B005A3F27 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE89A02279FCB3B005A3F27 /* Music.swift */; };
+		6BE89A06279FD1FA005A3F27 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6BE89A05279FD1FA005A3F27 /* SnapKit */; };
+		6BE89A11279FF5EA005A3F27 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6BE89A10279FF5EA005A3F27 /* Kingfisher */; };
+		6BE89A3B27A5D67E005A3F27 /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE89A3A27A5D67D005A3F27 /* LyricsViewController.swift */; };
+		6BE89A3D27A5D88D005A3F27 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE89A3C27A5D88D005A3F27 /* UIColor+.swift */; };
+		6BE89A4227A5DC8F005A3F27 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE89A4127A5DC8E005A3F27 /* String+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6BE899E9279FC841005A3F27 /* FLOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE899EC279FC841005A3F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BE899EE279FC841005A3F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BE899F0279FC841005A3F27 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		6BE899F5279FC842005A3F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BE899F8279FC843005A3F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BE899FA279FC843005A3F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE89A00279FCB08005A3F27 /* FetchMusicDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMusicDataManager.swift; sourceTree = "<group>"; };
+		6BE89A02279FCB3B005A3F27 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		6BE89A3A27A5D67D005A3F27 /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
+		6BE89A3C27A5D88D005A3F27 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		6BE89A4127A5DC8E005A3F27 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BE899E6279FC841005A3F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE89A11279FF5EA005A3F27 /* Kingfisher in Frameworks */,
+				6BE89A06279FD1FA005A3F27 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BE899E0279FC841005A3F27 = {
+			isa = PBXGroup;
+			children = (
+				6BE899EB279FC841005A3F27 /* FLOApp */,
+				6BE899EA279FC841005A3F27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BE899EA279FC841005A3F27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BE899E9279FC841005A3F27 /* FLOApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BE899EB279FC841005A3F27 /* FLOApp */ = {
+			isa = PBXGroup;
+			children = (
+				6BE899EC279FC841005A3F27 /* AppDelegate.swift */,
+				6BE899EE279FC841005A3F27 /* SceneDelegate.swift */,
+				6BE89A3E27A5D9EF005A3F27 /* extensions */,
+				6BE89A0C279FE62C005A3F27 /* Scenes */,
+				6BE89A0B279FE627005A3F27 /* Manager */,
+				6BE89A0A279FE622005A3F27 /* Model */,
+				6BE899F5279FC842005A3F27 /* Assets.xcassets */,
+				6BE899F7279FC843005A3F27 /* LaunchScreen.storyboard */,
+				6BE899FA279FC843005A3F27 /* Info.plist */,
+			);
+			path = FLOApp;
+			sourceTree = "<group>";
+		};
+		6BE89A0A279FE622005A3F27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BE89A02279FCB3B005A3F27 /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BE89A0B279FE627005A3F27 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6BE89A00279FCB08005A3F27 /* FetchMusicDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6BE89A0C279FE62C005A3F27 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6BE899F0279FC841005A3F27 /* PlayerViewController.swift */,
+				6BE89A3A27A5D67D005A3F27 /* LyricsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6BE89A3E27A5D9EF005A3F27 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BE89A3C27A5D88D005A3F27 /* UIColor+.swift */,
+				6BE89A4127A5DC8E005A3F27 /* String+.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BE899E8279FC841005A3F27 /* FLOApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE899FD279FC843005A3F27 /* Build configuration list for PBXNativeTarget "FLOApp" */;
+			buildPhases = (
+				6BE899E5279FC841005A3F27 /* Sources */,
+				6BE899E6279FC841005A3F27 /* Frameworks */,
+				6BE899E7279FC841005A3F27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLOApp;
+			packageProductDependencies = (
+				6BE89A05279FD1FA005A3F27 /* SnapKit */,
+				6BE89A10279FF5EA005A3F27 /* Kingfisher */,
+			);
+			productName = FLOApp;
+			productReference = 6BE899E9279FC841005A3F27 /* FLOApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BE899E1279FC841005A3F27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6BE899E8279FC841005A3F27 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 6BE899E4279FC841005A3F27 /* Build configuration list for PBXProject "FLOApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BE899E0279FC841005A3F27;
+			packageReferences = (
+				6BE89A04279FD1F9005A3F27 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6BE89A0F279FF5EA005A3F27 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 6BE899EA279FC841005A3F27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BE899E8279FC841005A3F27 /* FLOApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BE899E7279FC841005A3F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE899F9279FC843005A3F27 /* LaunchScreen.storyboard in Resources */,
+				6BE899F6279FC842005A3F27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BE899E5279FC841005A3F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE89A3B27A5D67E005A3F27 /* LyricsViewController.swift in Sources */,
+				6BE89A4227A5DC8F005A3F27 /* String+.swift in Sources */,
+				6BE89A03279FCB3B005A3F27 /* Music.swift in Sources */,
+				6BE899F1279FC841005A3F27 /* PlayerViewController.swift in Sources */,
+				6BE899ED279FC841005A3F27 /* AppDelegate.swift in Sources */,
+				6BE89A01279FCB08005A3F27 /* FetchMusicDataManager.swift in Sources */,
+				6BE899EF279FC841005A3F27 /* SceneDelegate.swift in Sources */,
+				6BE89A3D27A5D88D005A3F27 /* UIColor+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6BE899F7279FC843005A3F27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE899F8279FC843005A3F27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BE899FB279FC843005A3F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BE899FC279FC843005A3F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BE899FE279FC843005A3F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB9WF4459Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FLOApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cobugi.FLOApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BE899FF279FC843005A3F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB9WF4459Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FLOApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cobugi.FLOApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BE899E4279FC841005A3F27 /* Build configuration list for PBXProject "FLOApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE899FB279FC843005A3F27 /* Debug */,
+				6BE899FC279FC843005A3F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE899FD279FC843005A3F27 /* Build configuration list for PBXNativeTarget "FLOApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE899FE279FC843005A3F27 /* Debug */,
+				6BE899FF279FC843005A3F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6BE89A04279FD1F9005A3F27 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6BE89A0F279FF5EA005A3F27 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6BE89A05279FD1FA005A3F27 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BE89A04279FD1F9005A3F27 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6BE89A10279FF5EA005A3F27 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BE89A0F279FF5EA005A3F27 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6BE899E1279FC841005A3F27 /* Project object */;
+}
