@@ -34,6 +34,8 @@
 		6BE89A3A27A5D67D005A3F27 /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
 		6BE89A3C27A5D88D005A3F27 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		6BE89A4127A5DC8E005A3F27 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		6BE89A4A27A70B5A005A3F27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6BE89A4B27A71177005A3F27 /* FLOAPPImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FLOAPPImage.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,8 @@
 		6BE899E0279FC841005A3F27 = {
 			isa = PBXGroup;
 			children = (
+				6BE89A4A27A70B5A005A3F27 /* README.md */,
+				6BE89A4B27A71177005A3F27 /* FLOAPPImage.gif */,
 				6BE899EB279FC841005A3F27 /* FLOApp */,
 				6BE899EA279FC841005A3F27 /* Products */,
 			);
