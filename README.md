@@ -3,9 +3,9 @@
 
 ### 결과
 - 1차
-<p align="center"><img src="/FLOAPPImage1.gif"></p>
+<p align="center"><img src="/images/FLOAPPImage1.gif"></p>
 - 2차
-<p align="center"><img src="/FLOAPPImage2.gif"></p>
+<p align="center"><img src="/images/FLOAPPImage2.gif"></p>
 
 ### 외부 라이브러리
 - SnapKit
