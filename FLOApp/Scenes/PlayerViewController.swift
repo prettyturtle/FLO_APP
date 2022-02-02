@@ -11,9 +11,10 @@ import Kingfisher
 import AVFoundation
 
 /// 가사 뷰 컨과 연결하는 프로토콜
-protocol CurrentTime: AnyObject {
+protocol PlayerToLyrics: AnyObject {
     /// 재생되고 있는 음악의 현재 시간을 전달함
     func getCurrentTime(time: Float)
+    func updateProgressSlider(time: TimeInterval)
 }
 
 enum PlayerStatus {
@@ -24,11 +25,11 @@ enum PlayerStatus {
 class PlayerViewController: UIViewController {
     
     private var music: Music?
-    private var playerStatus: PlayerStatus = .pause
-    private var player: AVAudioPlayer?
+    var playerStatus: PlayerStatus = .pause
+    var player: AVAudioPlayer?
     private var timer: Timer?
     
-    weak var delegate: CurrentTime?
+    weak var delegate: PlayerToLyrics?
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -105,7 +106,7 @@ class PlayerViewController: UIViewController {
         button.tintColor = .label
         button.contentVerticalAlignment = .fill
         button.contentHorizontalAlignment = .fill
-        button.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapPlayButton(_:)), for: .touchUpInside)
         
         return button
     }()
@@ -115,29 +116,40 @@ class PlayerViewController: UIViewController {
         FetchMusicDataManager().fetchMusicData { [weak self] music in
             guard let self = self else { return }
             self.music = music
+            self.configMusicPlayer()
             DispatchQueue.main.async {
-                self.configMusicPlayer()
                 self.setupLayout()
                 self.setupView()
             }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        switch playerStatus {
+        case .play:
+            playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+        case .pause:
+            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
         }
     }
 }
 
 // MARK: - @objc func
 extension PlayerViewController {
-    @objc func didTapPlayButton() {
+    @objc func didTapPlayButton(_ sender: UIButton) {
         guard let player = player else { return }
         
         switch playerStatus {
         case .play:
             player.pause()
-            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            sender.setImage(UIImage(systemName: "play.fill"), for: .normal)
             playerStatus = .pause
         case .pause:
             player.play()
             startProgressSlider()
-            playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            sender.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             playerStatus = .play
         }
     }
@@ -159,6 +171,7 @@ extension PlayerViewController {
         progressSlider.value = Float(player.currentTime)
         currentTimeLabel.text = formattingTime(time: Int(player.currentTime))
         delegate?.getCurrentTime(time: Float(player.currentTime))
+        delegate?.updateProgressSlider(time: player.currentTime)
         
         if !player.isPlaying {
             playerStatus = .pause
@@ -168,9 +181,7 @@ extension PlayerViewController {
     }
     @objc func didTapLyricsLabel() {
         guard let music = music else { return }
-        let lyricsViewController = LyricsViewController()
-        lyricsViewController.lyrics = music.lyrics
-        lyricsViewController.playerViewController = self
+        let lyricsViewController = LyricsViewController(music: music, playerViewController: self)
         let lyricsNavigationController = UINavigationController(rootViewController: lyricsViewController)
         lyricsNavigationController.modalPresentationStyle = .fullScreen
         present(lyricsNavigationController, animated: true)

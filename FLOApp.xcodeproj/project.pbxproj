@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B3D880B27AAEC03007E82B1 /* FLOAPPImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FLOAPPImage2.gif; sourceTree = "<group>"; };
 		6BE899E9279FC841005A3F27 /* FLOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE899EC279FC841005A3F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BE899EE279FC841005A3F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,7 @@
 		6BE89A3C27A5D88D005A3F27 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		6BE89A4127A5DC8E005A3F27 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		6BE89A4A27A70B5A005A3F27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6BE89A4B27A71177005A3F27 /* FLOAPPImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FLOAPPImage.gif; sourceTree = "<group>"; };
+		6BE89A4B27A71177005A3F27 /* FLOAPPImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FLOAPPImage1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +52,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3D880C27AAEC16007E82B1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6BE89A4B27A71177005A3F27 /* FLOAPPImage1.gif */,
+				6B3D880B27AAEC03007E82B1 /* FLOAPPImage2.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		6BE899E0279FC841005A3F27 = {
 			isa = PBXGroup;
 			children = (
 				6BE89A4A27A70B5A005A3F27 /* README.md */,
-				6BE89A4B27A71177005A3F27 /* FLOAPPImage.gif */,
+				6B3D880C27AAEC16007E82B1 /* images */,
 				6BE899EB279FC841005A3F27 /* FLOApp */,
 				6BE899EA279FC841005A3F27 /* Products */,
 			);

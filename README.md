@@ -2,7 +2,10 @@
 ## (프로그래머스 과제 중)
 
 ### 결과
-![](/FLOAPPImage.gif)
+- 1차
+<p align="center"><img src="/FLOAPPImage1.gif"></p>
+- 2차
+<p align="center"><img src="/FLOAPPImage2.gif"></p>
 
 ### 외부 라이브러리
 - SnapKit
@@ -21,10 +24,12 @@
     - `present` 했을 때, 음악이 재생 중이라면
     - `delegate`로 음악의 현재 재생 시간을 전달한다
 5. `LyricsViewController`에서 현재 재생 시간을 확인하여 가사 한 줄씩 색상을 변경한다
+6. `LyricsViewController`에서도 슬라이더, 재생\정지 버튼을 만들어 음악을 컨트롤할 수 있음
+7. `LyricsViewController`에서 현재 가사에 맞춰 테이블 뷰가 스크롤 된다
 
 ### 앞으로 구현해야할 것
 - `PlayViewController`에서 음악의 현재 재생 시간에 맞춰 가사 색상 변경
-- `LyricsViewController`에서도 슬라이더, 재생\정지 버튼을 만들어 음악을 컨트롤할 수 있게 만들기
+- ~~`LyricsViewController`에서도 슬라이더, 재생\정지 버튼을 만들어 음악을 컨트롤할 수 있게 만들기~~
 - `LyricsViewController`에서 가사 한줄을 탭했을 때, 그 가사로 음악이 넘어가는 기능
 
 ### 반성
@@ -32,3 +37,4 @@
 - viewDidLoad에 막 써놓은 것들을 기능별로 함수를 만들어 정리를 해야겠다
 - `AVFoundation`, `Timer`를 다뤄본 적이 없어서 초반에 많이 힘들었다
 - 좀 더 다양한 라이브러리, 기능들을 구현하도록 노력해야겠다
+- 동일한 기능은 하나의 코드로 최대한 통일시켜야겠다, 너무 코드가 겹치는게 많은 느낌이 든다
